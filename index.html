@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
     <title>Surf'up Summit</title>
-    <link rel="Stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
@@ -12,20 +13,70 @@
   </head>
   <body>
     <header>
-      <title>Surf'up Summit</title>
-      <nav>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
+      <div class="flex justify-between items-center px-4 py-2">
+        <div class="flex items-center space-x-2">
+          <h1 class="text-2xl">Surf'up Summit</h1>
+          <img src="img/wave-svgrepo-com.svg" alt="Wave" />
+        </div>
+        <div class="hidden md:flex space-x-6">
+          <ul class="flex space-x-6">
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li>
+              <a href="#">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+        <div class="absolute top-0 right-0 mt-4 mr-4">
+          <button id="menu-btn" class="block md:hidden">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="register-btn">
+        <button
+          class="block md:hidden bg-blue-500 text-white px-4 py-2 rounded"
+        >
+          Register
+        </button>
+      </div>
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md"
+      >
+        <ul class="space-y-2">
+          <li><a href="#" class="block px-4 py-2">About</a></li>
+          <li><a href="#" class="block px-4 py-2">Contact</a></li>
+          <li><a href="#" class="block px-4 py-2">Sponsors</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
+
     <main>
-      <section></section>
+      <section class="updates-container">
+        <h2></h2>
+      </section>
       <section></section>
       <section></section>
     </main>
+
     <footer></footer>
   </body>
 </html>
