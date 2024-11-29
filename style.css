@@ -65,6 +65,10 @@ li {
   font-style: normal;
 }
 
+.event-text {
+  width: 60vw;
+}
+
 /* animations from left to right */
 @keyframes marquee {
   0% {
@@ -80,7 +84,7 @@ li {
 .animation-container__marquee {
   animation: marquee 20s linear infinite;
 }
-.animation-container__sponsor {
+.animation-container__logo {
   width: 8rem;
 }
 
