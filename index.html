@@ -4,20 +4,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="script.js" defer></script>
-    <title>Surf'up Summit</title>
+    <title>WaveQuest</title>
     <link rel="stylesheet" href="style.css" />
     <link
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
     <header>
-      <div class="flex justify-between items-center px-4 py-2">
+      <nav class="flex justify-between items-center px-4 py-2">
         <div class="flex items-center space-x-2">
-          <h1 class="text-2xl">Surf'up Summit</h1>
-          <!-- <img src="img/wave-svgrepo-com.svg" alt="Wave" /> -->
+          <img src="img/su.webp" class="header-icon" alt="Surflogo" />
         </div>
+
+        <div class="flex justify-end w-full">
+          <button
+            class="mr-8 bg-white btns text-black border-2 border-black px-4 py-2 rounded"
+          >
+            Register
+          </button>
+          <button
+            class="hidden md:block btns mr-8 bg-white text-black border-2 border-black px-4 py-2 rounded"
+          >
+            Get Updates
+          </button>
+        </div>
+
         <div class="hidden md:flex space-x-6">
           <ul class="flex space-x-6">
             <li>
@@ -31,6 +55,7 @@
             </li>
           </ul>
         </div>
+
         <div class="absolute top-0 right-0 mt-4 mr-4">
           <button id="menu-btn" class="block md:hidden">
             <svg
@@ -49,15 +74,9 @@
             </svg>
           </button>
         </div>
-      </div>
-      <div class="register-btn">
-        <button
-          class="block md:hidden bg-white text-black border-2 border-black px-4 py-2 rounded"
-        >
-          Register
-        </button>
-      </div>
-      <div
+      </nav>
+
+      <nav
         id="mobile-menu"
         class="hidden md:hidden absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md"
       >
@@ -66,28 +85,29 @@
           <li><a href="#" class="block px-4 py-2">Contact</a></li>
           <li><a href="#" class="block px-4 py-2">Sponsors</a></li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <main>
-      <section class="updates-container">
-        <div class="updates-container__text">
+      <section class="hero-container">
+        <div class="hero-container__text">
           <h2
-            class="text-4xl md:text-6xl font-bold text-black text-center leading-tight mb-4"
+            class="text-4xl md:text-6xl text-white text-center leading-tight mb-4"
           >
-            Surf'up Summit
+            wavequest
           </h2>
-          <p class="text-lg md:text-2xl text-black text-center mx-4 mb-8">
+          <p class="text-lg md:text-2xl text-white text-center mx-4 mb-8">
             Join us for the ultimate surf event of the year! Explore the best
             waves and meet top surfers.
           </p>
-          <button class="bg-white text-black border-2 border-black px-4 py-2 rounded mx-auto block">Get Updates<button>
+          <button
+            class="hero-container__btn text-black p-5 h-24 w-24 rounded-full mx-auto block flex justify-center items-center"
+          >
+            Updates
+          </button>
         </div>
       </section>
-      <section>
-        
-
-      </section>
+      <section></section>
       <section></section>
     </main>
 
