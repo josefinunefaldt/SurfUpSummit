@@ -16,7 +16,7 @@
 }
 
 .hero-container {
-  background-image: url("img/derek-liang-G9gaKlXeVrw-unsplash.jpg");
+  background-image: url("img/Hero.jpg");
   background-position: 50% 25%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -63,6 +63,25 @@ li {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+}
+
+/* animations from left to right */
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.animation-container {
+  width: 70vw;
+}
+.animation-container__marquee {
+  animation: marquee 20s linear infinite;
+}
+.animation-container__sponsor {
+  width: 8rem;
 }
 
 @media (max-width: 600px) {
