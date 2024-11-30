@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
     <title>WaveQuest</title>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -14,12 +14,6 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
@@ -28,34 +22,19 @@
         <div class="flex items-center space-x-2">
           <img src="img/logo.webp" class="header-icon" alt="Surflogo" />
         </div>
-
         <div class="flex justify-end w-full">
-          <button
-            class="bg-white btns text-black mr-8 border-2 border-black px-4 py-2 rounded"
-          >
-            Register
-          </button>
-          <button
-            class="hidden md:block mr-8 btns bg-white text-black border-2 border-black px-4 py-2 rounded"
-          >
+          <button class="btns mr-8 px-4 py-2">Register</button>
+          <button class="hidden md:block mr-8 btns btns mr-8 px-4 py-2">
             Get Updates
           </button>
         </div>
-
         <div class="hidden md:flex space-x-6">
           <ul class="flex space-x-6">
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">Sponsors</a>
-            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Sponsors</a></li>
           </ul>
         </div>
-
         <div class="absolute top-0 right-0 mt-4 mr-4">
           <button id="menu-btn" class="block md:hidden">
             <svg
@@ -75,7 +54,6 @@
           </button>
         </div>
       </nav>
-
       <nav
         id="mobile-menu"
         class="hidden md:hidden absolute right-0 mt-2 w-48 bg-white shadow-md rounded-md"
@@ -87,25 +65,22 @@
         </ul>
       </nav>
     </header>
-
     <main>
       <section class="hero-container">
-        <div class="hero-container__text">
-          <h2 class="text-4xl md:text-6xl text-white text-center mb-4">
-            wavequest
-          </h2>
+        <article class="hero-container__text">
+          <h2 class="text-4xl md:text-6xl text-white text-center">wavequest</h2>
           <p class="text-lg md:text-2xl text-white text-center mx-4 mb-8">
             Join us for the ultimate surf event of the year! Explore the best
             waves and meet top surfers.
           </p>
           <button
-            class="hero-container__btn text-black p-5 h-24 w-24 rounded-full mx-auto block flex justify-center items-center"
+            class="hero-container__btn text-black p-5 h-24 w-24 rounded-full mx-auto flex justify-center items-center"
           >
             Updates
           </button>
-        </div>
+        </article>
       </section>
-      <section class="flex flex-col justify-center items-center mt-4">
+      <section class="flex flex-col justify-center items-center mt-6">
         <h2 class="text-3xl md:text-3xl">Who attends</h2>
         <hr class="border-0 border-t-2 border-blue-300 w-64" />
         <article class="overflow-hidden relative animation-container mt-8">
@@ -132,169 +107,109 @@
             />
           </div>
         </article>
-        <div class="flex flex-col md:flex-row justify-center">
+        <div
+          class="flex flex-col md:flex-row justify-center event-container md:space-x-12"
+        >
           <article class="flex flex-col justify-center items-center mt-4">
             <h2 class="text-3xl md:text-3xl mb-4">Upcoming events</h2>
-            <p class="event-text text-lg text-center">
+            <p class="text-lg text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
               obcaecati distinctio tempore? Dolores perspiciatis nam itaque
-              sapiente earum, molestiae vitae fuga, illo atque similique eos
-              mollitia quos voluptate iure laudantium? Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Libero obcaecati distinctio
-              tempore? Dolores perspiciatis nam itaque sapiente earum, molestiae
-              vitae fuga, illo atque similique eos mollitia quos voluptate iure
-              laudantium? Lorem ipsum dolor sit.
+              sapiente earum.
             </p>
-            <button
-              class="bg-white btns text-black border-2 border-black px-4 py-2 rounded"
-            >
-              Learn more
-            </button>
+            <button class="btns px-4 py-3 mt-2">Learn more</button>
           </article>
           <article class="flex flex-col justify-center items-center mt-4">
             <h2 class="text-3xl md:text-3xl mb-4">Sponsors 2024</h2>
             <p class="event-text text-lg text-center">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
               obcaecati distinctio tempore? Dolores perspiciatis nam itaque
-              sapiente earum, molestiae vitae fuga, illo atque similique eos
-              mollitia quos voluptate iure laudantium? Lorem ipsum dolor sit,
-              amet consectetur adipisicing elit. Libero obcaecati distinctio
-              tempore? Dolores perspiciatis nam itaque sapiente earum, molestiae
-              vitae fuga, illo atque similique eos mollitia quos voluptate iure
-              laudantium? Lorem ipsum dolor sit.
+              sapiente earum.
             </p>
-            <button
-              class="bg-white btns text-black border-2 border-black px-4 py-2 rounded"
-            >
-              Explore sponsorship opportunities
-            </button>
+            <button class="btns px-4 py-3 mt-2">Learn more</button>
           </article>
         </div>
-        <article
-          class="block md:hidden flex flex-col justify-center text-center items-center mt-4"
+        <div
+          class="flex flex-col md:flex-row justify-center contact-container space-x-12 mt-8"
         >
-          <h2>Contact</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ex
-            delectus, asperiores voluptatem provident obcaecati, nobis velit ab
-            quis qui quasi accusamus magnam animi fugiat sint aliquam, unde
-            aliquid inventore!
-          </p>
-          <button
-            class="bg-white btns text-black border-2 border-black px-4 py-2 rounded"
+          <section
+            class="flex flex-col justify-start items-start w-full md:w-1/2 mt-4"
           >
-            Click here
-          </button>
-        </article>
-        <article class="w-full">
-          <div class="container mt-16 bg-white shadow-sm p-8 sm:p-10 lg:p-4">
-            <div
-              class="flex flex-col md:flex-row items-center justify-center md:justify-start"
-            >
-              <div
-                class="form-container md:w-[50%] w-full text-center md:text-left"
-              >
-                <div class="max-w-xl mx-auto">
-                  <h2 class="text-4xl font-semibold text-gray-900 sm:text-5xl">
-                    Contact
-                  </h2>
-                </div>
-                <div
-                  class="form-content mx-auto mt-16 bg-white shadow-sm p-8 sm:p-10"
+            <h2 class="text-3xl md:text-3xl mb-4 self-center">Contact</h2>
+            <form action="#" method="POST" class="space-y-4 w-full">
+              <div>
+                <label
+                  for="first-name"
+                  class="block text-sm font-semibold text-gray-900"
+                  >First name</label
                 >
-                  <form action="#" method="POST" class="space-y-6">
-                    <div>
-                      <label
-                        for="first-name"
-                        class="block text-sm font-semibold text-gray-900"
-                        >First name</label
-                      >
-                      <input
-                        type="text"
-                        id="first-name"
-                        name="first-name"
-                        class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2.5 px-3 text-gray-900 shadow-sm focus:ring-indigo-600 focus:ring-2 focus:border-indigo-600 hover:border-gray-400"
-                        placeholder="Enter your first name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="last-name"
-                        class="block text-sm font-semibold text-gray-900"
-                        >Last name</label
-                      >
-                      <input
-                        type="text"
-                        id="last-name"
-                        name="last-name"
-                        class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2.5 px-3 text-gray-900 shadow-sm focus:ring-indigo-600 focus:ring-2 focus:border-indigo-600 hover:border-gray-400"
-                        placeholder="Enter your last name"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="company"
-                        class="block text-sm font-semibold text-gray-900"
-                        >Company</label
-                      >
-                      <input
-                        type="text"
-                        id="company"
-                        name="company"
-                        class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2.5 px-3 text-gray-900 shadow-sm focus:ring-indigo-600 focus:ring-2 focus:border-indigo-600 hover:border-gray-400"
-                        placeholder="Enter your company name"
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="email"
-                        class="block text-sm font-semibold text-gray-900"
-                        >Email</label
-                      >
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2.5 px-3 text-gray-900 shadow-sm focus:ring-indigo-600 focus:ring-2 focus:border-indigo-600 hover:border-gray-400"
-                        placeholder="josefinunefaldt@example.com"
-                        required
-                      />
-                    </div>
-                    <div>
-                      <label
-                        for="message"
-                        class="block text-sm font-semibold text-gray-900"
-                        >Message</label
-                      >
-                      <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2.5 px-3 text-gray-900 shadow-sm focus:ring-indigo-600 focus:ring-2 focus:border-indigo-600 hover:border-gray-400"
-                        placeholder="Write your message"
-                      ></textarea>
-                    </div>
-                    <div>
-                      <button
-                        class="bg-white btns text-black border-2 border-black px-4 py-2 rounded"
-                      >
-                        Let's Talk
-                      </button>
-                    </div>
-                  </form>
-                </div>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2 px-3 text-gray-900 shadow-sm"
+                  placeholder="Enter your first name"
+                  required
+                />
               </div>
-          </div>
-        </article>
+              <div>
+                <label
+                  for="last-name"
+                  class="block text-sm font-semibold text-gray-900"
+                  >Last name</label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2 px-3"
+                  placeholder="Enter your last name"
+                  required
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-semibold text-gray-900"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="mt-2 block w-full rounded-md border border-gray-300 bg-gray-50 py-2 px-3 text-gray-900 shadow-sm"
+                  placeholder="josefinunefaldt@example.com"
+                  required
+                />
+              </div>
+              <div>
+                <button class="btns px-4 py-3 mt-2">Let's Talk</button>
+              </div>
+            </form>
+          </section>
+          <article
+            class="hidden lg:flex flex-col justify-center items-center w-full md:w-1/2 mt-4"
+          >
+            <img
+              src="img/surfboard.png"
+              alt="Surfboard logo"
+              class="w-48 h-auto"
+            />
+          </article>
+        </div>
       </section>
     </main>
     <hr class="border-0 border-t-2 w-full mt-8" />
     <footer class="flex justify-center items-center pt-2 space-x-4 p-2">
-      <img src="img/linkedn.png" class="w-8 footer-logo" alt="linkedin" />
-      <img src="img/facebook.png" class="w-8 footer-logo" alt="facebook" />
-      <img src="img/instagram.png" class="w-8 footer-logo" alt="instagram" />
+      <a href="https://www.linkedin.com"
+        ><img src="img/linkedn.png" class="w-8 footer-logo" alt="linkedin"
+      /></a>
+      <a href="https://www.facebook.com"
+        ><img src="img/facebook.png" class="w-8 footer-logo" alt="facebook"
+      /></a>
+      <a href="https://www.instagram.com"
+        ><img src="img/instagram.png" class="w-8 footer-logo" alt="instagram"
+      /></a>
     </footer>
   </body>
 </html>
