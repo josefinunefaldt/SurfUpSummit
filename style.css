@@ -26,6 +26,17 @@
   justify-content: center;
   height: 75vh;
 }
+footer {
+  background-color: #b2dde0;
+}
+.footer-logo {
+  opacity: 0.2;
+}
+
+.footer-logo:hover {
+  opacity: unset;
+  cursor: pointer;
+}
 
 .hero-container__btn {
   background-color: #b2dde0;
