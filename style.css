@@ -40,9 +40,7 @@ li button {
 
 .hero-container__btn {
   background-color: #b2dde0;
-  border-radius: 8px;
   font-size: large;
-  padding: 12px 24px;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }
 
