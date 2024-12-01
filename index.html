@@ -82,7 +82,7 @@
       </section>
       <section class="flex flex-col justify-center items-center mt-6">
         <h2 class="text-3xl hidden md:block">Who attends</h2>
-        <hr class="border-0 border-t-2 border-blue-300 w-64" />
+        <hr class="border-0 border-t-2 border-blue-300 w-64 hidden md:block" />
         <article
           class="overflow-hidden relative animation-container mt-8 hidden md:block"
         >
@@ -112,23 +112,46 @@
         <div
           class="flex flex-col md:flex-row justify-center event-container md:space-x-12"
         >
-          <article class="flex flex-col justify-center items-center mt-4">
+          <article
+            class="flex flex-col justify-center items-center w-full mt-4"
+          >
             <h2 class="text-3xl mb-4">Upcoming events</h2>
-            <p class="text-lg text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-              obcaecati distinctio tempore? Dolores perspiciatis nam itaque
-              sapiente earum.
-            </p>
-            <button class="btns mt-2">Learn more</button>
+            <ul class="list-disc pl-6 text-left space-y-2">
+              <li>
+                <strong>Newquay 2025</strong>: WaveQuest is back again with a
+                thrilling start at Cornwall's Fistral Beach. blending
+                high-energy competitions with local surf culture.
+              </li>
+              <li>
+                <strong>St Ives UK 2025</strong>: The ultimate surf experience
+                of the year, bringing together iconic locations, top surfers,
+                and unforgettable beach vibes.
+              </li>
+
+              <li>
+                <strong>Huntington Beach 2025</strong>: Ride the waves in sunny
+                California at the iconic Surf City USA, packed with fun for the
+                entire family.
+              </li>
+              <li>
+                <strong>Pipeline 2025</strong>: Experience the awe of Hawaii's
+                Banzai Pipeline, where the legends of surfing come to life.
+              </li>
+            </ul>
+
+            <button class="btns mt-6">Learn more</button>
           </article>
-          <article class="flex flex-col justify-center items-center mt-4">
+          <article class="flex flex-col items-center mt-4 w-full">
             <h2 class="text-3xl mb-4">Sponsors 2024</h2>
             <p class="event-text text-lg text-center">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
-              obcaecati distinctio tempore? Dolores perspiciatis nam itaque
-              sapiente earum.
+              Be part of the most exciting surf event of the year! As a sponsor,
+              you'll gain unparalleled exposure to a vibrant, global audience of
+              surf enthusiasts. Join us in making WaveQuest 2025 an
+              unforgettable experience, and showcase your brand alongside the
+              world's top surfers and premier beach events.
             </p>
-            <button class="btns mt-2">Learn more</button>
+
+            <button class="btns mt-6">Learn more</button>
           </article>
         </div>
         <div
